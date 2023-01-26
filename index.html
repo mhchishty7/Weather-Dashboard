@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather Dashboard</title>
+    <meta name="description" content="Web app to view weather data for different cities.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header-container">
+      <img src="assets\images\application.png" width="90" height="90"/>
+        <h1 class="header-title">Weather Dashboard</h1>
+    </header>
+    <main class="main">
+        <section class="search-container">
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Search city" />
+                <button class="search-btn">Search</button>
+            </form>
+        </section>
+
+        <div class="data-wrapper">
+            <section class="history-container">
+                <ul class="searchHistory">Past Searches:</ul>
+                <div class="search-wrapper"></div>
+            </section>
+            <div class="forecast-container">
+                <section class="current-weather-container">
+                    <h2 class="current-day-container">Today's Forecast</h2>
+                    <h2 class="current-city"></h2>
+                    <div class="currentWeather-wrapper">
+                    </div>
+                </section>
+                <section class="data-container">
+                    <h2 class="forecastTitle">5 Day Forecast</h2>
+                    <h2 class="city"></h2>
+                    <div class="card-wrapper">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/script.js" async defer></script>
+      <footer>
+        <p style="color:white"> Made with ❤ by Monazir Hasssan Chishty </a></p>
+    </footer>
+</body>
+
+</html>
